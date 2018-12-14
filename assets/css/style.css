@@ -1,0 +1,1102 @@
+/*===========================
+Template Name: Anchor
+
+
+
+/*===========================
+--------------------
+CSS Index
+--------------------
+
+
+***** Fonts
+***** Base CSS
+***** Padding, Margin 
+***** Background Imaages
+***** Menu CSS
+***** MMobile Menu CSS
+***** Header CSS
+***** Hero Area CSS
+***** Owl carousel CSS
+***** About Area CSS
+***** Process Area CSS
+***** Service Area CSS
+***** Portfolio Area CSS
+***** Team Area CSS
+***** Pricing Area CSS
+***** Experience Area CSS
+***** Testimonial Area CSS
+***** Blog Area CSS
+***** Footer Area CSS
+
+
+=============================*/
+
+
+
+/*===========================
+Fonts
+=============================*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i|Open+Sans|Poppins:400,400i,500,500i,600,600i,700,700i');
+
+@font-face {
+    font-family: 'aileronthin';
+    src: url('../fonts/aileron_thin-webfont.woff2') format('woff2'),
+         url('../fonts/aileron_thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*===========================
+Base CSS
+=============================*/
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #838383;
+    line-height: 1.7;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+    color: #333;
+    line-height: 1.4;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+a:hover,
+a:focus {
+    text-decoration: none
+}
+
+a:focus {
+    outline: 0 solid
+}
+
+.grey-bg{
+    background-color: #F3F7F9;
+}
+
+.overlay{
+    position: relative;
+    z-index: 1;
+}
+
+.overlay:before {
+    position:  absolute;
+    left:  0;
+    top: 0;
+    width:  100%;
+    height:  100%;
+    background-color: #2B2B2B;
+    opacity: 0.7;
+    content:  "";
+    z-index: -1;
+}
+
+.section-heading , .section-title{margin-bottom: 31px;padding-bottom: 10px;}
+.section-heading .sub-title, .section-title .sub-title {
+    color:  #A46454;
+    text-transform: uppercase;
+    font-family:  'Poppins', sans-serif;
+    font-weight: 700;
+    margin-bottom: 0;
+    position: relative;
+}
+.section-title:after {
+    position:  absolute;
+    bottom:  0;
+    content:"";
+    width:  100px;
+    height:  2px;
+    left: 50%;
+    margin-left:  -50px;
+    background-color: #A46454;
+}
+
+.section-title p {
+     font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    padding: 0px 40px;
+}
+
+.section-heading h2, .section-title h2 {
+    font-family:  'aileronthin',  sans-serif;
+    font-weight:  normal;
+    font-size: 45px;
+}
+
+.section-heading.light h2, .section-title.light h2 {
+    color: #fff;
+}
+.parallax{background-attachment: fixed;}
+
+.bordered-btn {
+    color:  #fff;
+    background-color:  #A36353;
+    display:  inline-block;
+    padding: 12px 45px;
+    border-radius:  50px;
+    text-transform: uppercase;
+    font-family:  'Poppins', sans-serif;
+    font-weight: 600;
+    box-shadow: 0px 5px 12px #BBBEBF;
+    transition: 0.3s;
+    border: 2px solid #A36353;
+}
+.bordered-btn:hover {
+    background:  none;
+    color: #A26252;
+}
+
+
+/*===========================
+Padding, Margin
+=============================*/
+
+.section-padding {
+    padding: 100px 0px;
+}
+
+.spacer-10{height: 10px;}
+.spacer-20{height: 20px;}
+.spacer-30{height: 30px;}
+.spacer-40{height: 40px;}
+.spacer-50{height: 50px;}
+
+
+
+/*===========================
+Background Images
+=============================*/
+
+
+
+.hero-area{background-image: url(../img/Slider_01.jpg);}
+#process{background-image: url(../img/paralax-img/process-section.jpg);}
+#service{background-image: url(../img/Service_bg.jpg);}
+
+.portfolio-bg-1{background-image: url(../img/gallery/1.jpg);}
+.portfolio-bg-2{background-image: url(../img/gallery/2.jpg);}
+.portfolio-bg-3{background-image: url(../img/gallery/3.jpg);}
+.portfolio-bg-4{background-image: url(../img/gallery/4.jpg);}
+.portfolio-bg-5{background-image: url(../img/gallery/7.jpg);}
+.portfolio-bg-6{background-image: url(../img/gallery/6.jpg);}
+.portfolio-bg-7{background-image: url(../img/gallery/5.jpg);}
+.team-member-img-1{background-image: url(../img/team-member/1.jpg);}
+.team-member-img-2{background-image: url(../img/team-member/2.jpg);}
+.team-member-img-3{background-image: url(../img/team-member/3.jpg);}
+.team-member-img-4{background-image: url(../img/team-member/2.jpg);}
+.team-member-img-5{background-image: url(../img/team-member/1.jpg);}
+.team-member-img-6{background-image: url(../img/team-member/3.jpg);}
+#experience{background-image: url(../img/paralax-img/fun-facts.jpg);}
+#testimonial{background-image: url(../img/Testimonial_bg.jpg);}
+.blog-image-1{background-image: url(../img/blog-img/1.jpg);}
+.blog-image-2{background-image: url(../img/blog-img/2.jpg);}
+.blog-image-3{background-image: url(../img/blog-img/3.jpg);}
+#contact{background-image: url(../img/Contact_bg.jpg);}
+
+
+/*===========================
+Hamburger Menu CSS
+=============================*/
+
+.offcanvas-menu {
+    position: fixed;
+    background-color:  #000;
+    z-index: 999;
+    width:  300px;
+    height: 100%;
+    margin-left:  -300px;
+    transition: 0.3s;
+}
+
+.offcanvas-menu ul {
+    display:  block;
+    padding: 20px;
+    margin: 0;
+    padding-top: 70px;
+}
+
+.offcanvas-menu ul li {
+    display:  block;
+    border-bottom: 1px solid #A26252;
+}
+
+.offcanvas-menu ul li a {
+    display:  block;
+    color:  #fff;
+    font-size: 12px;
+    padding: 10px 20px;
+    padding-left: 0;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.offcanvas-overlay {
+    position: fixed;
+    background-color:  #000;
+    width:  100%;
+    height:  100%;
+    z-index: -1;
+    opacity: 0;
+    visibility:  hidden;
+    transition: 0.3s;
+}
+
+.menu-close {
+    position:  absolute;
+    right: 10px;
+    top: 0;
+    padding:  18px;
+    font-size: 20px;
+    color: #fff;
+    cursor:  pointer;
+}
+
+.menu-triger a {
+    display: inline-block;
+}
+
+.menu-triger a span {
+    display: block;
+    width:  30px;
+    height:  2px;
+    background-color:  #E74F87;
+    margin-bottom: 8px;
+}
+
+.menu-triger a span:nth-child(2) {
+    width: 15px;
+}
+
+.menu-triger a span:nth-child(3) {
+    width: 24px;
+}
+
+.offcanvas-menu.active {
+     margin-left: 0; 
+}
+
+.offcanvas-overlay.active {
+    opacity: 0.6;
+    visibility:  visible;
+    z-index: 998;
+}
+
+/*===========================
+Menu CSS
+=============================*/
+.header-area.absolute-header {
+    position:  absolute;
+    left:  0;
+    top: 0;
+    width:  100%;
+    z-index:  9;
+}
+.header-area.sticky {
+    position:  fixed;
+    background-color:  #000;
+    box-shadow: 0px 0px 15px #333;
+}
+.main-menu ul {
+    list-style:  none;
+    padding:  0;
+    margin:  0;
+}
+
+.main-menu ul li {
+    display: inline-block;
+    padding: 20px;
+}
+
+.main-menu ul li a {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 2px;
+    display:  inline-block;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+}
+.nav>li>a:focus, .nav>li>a:hover{
+    background:none;
+}
+
+
+.menu-triger a {
+    display: inline-block;
+    padding: 10px;
+}
+
+.menu-triger a span {
+    width: 30px;
+    height:  2px;
+    background-color: #fff;
+    display: block;
+    margin-bottom: 7px;
+}
+
+.menu-triger a span:nth-child(2) {
+    width: 70%;
+    margin-left: 30%;
+}
+
+.menu-triger a span:nth-child(3) {
+    width: 50%;
+    margin-left: 50%;
+}
+
+.menu-right {
+    padding-top: 20px;
+    text-align: right;
+}
+
+.main-menu {
+    text-align: right;
+}
+
+.logo a {
+    display:  inline-block;
+    padding:  19px;
+    padding-left: 0;
+}
+
+.main-menu ul li.active a:after {
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    height:2px ;
+    background-color:#855447;
+    content:"";
+    
+}
+
+
+
+
+/*===========================
+Hero Area CSS
+=============================*/
+.hero-area {
+    background-size:  cover;
+    background-position:  center;
+    position:  relative;
+    z-index: 1;
+}
+
+
+.hero-text{
+    padding: 160px 0px;
+}
+
+.hero-text h1 {
+ font-family: 'aileronthin',
+ sans-serif;
+ color:  #fff;
+ font-weight:  normal;
+ text-transform:  uppercase;
+ font-size: 80px;
+ line-height: 1.2;
+}
+
+.hero-text h1 span {
+    color: #a46454;
+}
+
+.hero-text h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight:  400;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 21px;
+    margin-bottom: 40px;
+}
+.hero-text h3 span{
+   color: #a46454;
+}
+
+.boxed-btn {
+    display:  inline-block;
+    color:  #fff;
+    background-color:  #A36353;
+    padding: 15px 65px;
+    text-transform: uppercase;
+    font-family:  'Poppins', sans-serif;
+    border-radius: 50px;
+    transition:  0.3s;
+    border: 2px solid #A36353;
+}
+.boxed-btn:hover {
+    background:  none;
+    color: #fff;
+}
+
+.scroll-to-about {
+    display:  inline-block;
+    position:  absolute;
+    left: 10%;
+    bottom: 5%;
+    color:  #fff;
+    text-transform: uppercase;
+    font-family:  'Poppins', sans-serif;
+    transition: 0.3s;
+    opacity: 0.8;
+}
+.scroll-to-about:hover {
+    color:  #fff;
+    opacity: 1;
+}
+
+.scroll-to-about span {
+    display:  block;
+    margin-top: 15px;
+}
+
+/*===========================
+Owl Carousel CSS
+=============================*/
+
+.owl-dots div {
+    display:  inline-block;
+    width:  10px;
+    height:  10px;
+    background-color:  #A26252;
+    margin:  5px;
+    border-radius: 50px;
+}
+
+.owl-dots div.active {
+    background: none;
+    border:  1px solid #A26252;
+    width:  12px;
+    height: 12px;
+}
+
+.owl-dots {
+    text-align: center;
+    display: block;
+    margin: 40px 0px;
+}
+
+.hero-area .owl-dots div {
+    display:  block;
+    width:  10px;
+    height:  10px;
+    background-color:  #fff;
+    margin-bottom: 5px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.hero-area .owl-dots {
+    display: inline-block;
+    position:  absolute;
+    right: -20%;
+    top: 60%;
+    height: 50px;
+    margin-top: -25px;
+    text-align: center;
+}
+
+.hero-area .owl-dots div.active {
+    background:  no-repeat;
+    border: 2px solid #fff;
+}
+
+
+
+/*===========================
+About Area CSS
+=============================*/
+
+.who-we-are img {
+    box-shadow: 0px 4px 25px #BBBEBF;
+}
+
+
+
+/*===========================
+Process Area CSS
+=============================*/
+#process {
+    background-size:  cover;
+    background-position:  center center;
+}
+
+.single-process {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.single-process h4 {
+    color:  #fff;
+    text-transform:  uppercase;
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+.single-process h4 span {
+    display: block;
+}
+
+/*===========================
+Service Area CSS
+=============================*/
+
+#service {background-size:  cover;background-position:  center center;background-color: #ddd;}
+
+.service-item {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    min-height: 220px;
+}
+
+.service-item  .service-icon {
+    margin-bottom: 20px;
+    max-width: 35px;
+}
+
+.service-item h4 {
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+
+/*===========================
+Portfolio Area CSS
+=============================*/
+
+.portfolio-sorting {
+    list-style:  none;
+    padding:  0;
+    margin:  0;
+    margin: 50px 0px;
+    text-align: center;
+    color: #9ca3b1;
+}
+
+.portfolio-sorting li {
+    display:  inline-block;
+    font-family:  'Montserrat', sans-serif;
+    text-transform: uppercase;
+    padding: 10px 35px;
+    border-radius:  50px;
+    font-weight: 700;
+    font-size: 12px;
+    cursor:  pointer;
+    margin-top: 15px;
+}
+
+.portfolio-sorting li.active {
+    background-color: #A36353;
+    color: #fff;
+}
+
+.single-portfolio {
+    height:  245px;
+    background-size:  cover;
+    background-position: center top;
+    background-color:  #BE9186;
+    margin-bottom: 25px;
+    position: relative;
+    text-align: center;
+}
+
+.portfolio-list .col-md-4:nth-child(2) .single-portfolio,.portfolio-list .col-md-4:nth-child(5) .single-portfolio  {
+    height: 515px;
+}
+
+.portfolio-hover {
+    position:  absolute;
+    left:  0;
+    top: 0;
+    width:  100%;
+    height: 100%;
+    display: table;
+    z-index: 1;
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.3s;
+}
+.portfolio-hover h4 {
+    color:  #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.portfolio-hover:before {
+    position:  absolute;
+    left:  0;
+    top: 0;
+    width:  100%;
+    height:  100%;
+    background-color:  #BE9186;
+    content:  "";
+    opacity:  0.7;
+    z-index: -1;
+}
+
+.portfolio-hover-cell {
+    display:  table-cell;
+    vertical-align:  middle;
+    z-index: 2;
+}
+
+.portfolio-hover a {
+    color: #fff;
+    display:  inline-block;
+    font-size:  18px;
+    border: 2px solid #fff;
+    width: 40px;
+    border-radius:  50px;
+    height: 40px;
+    line-height: 37px;
+    transition: 0.3s;
+}
+
+.portfolio-hover a:hover {
+    background-color:  #fff;
+    color: #C1978C;
+}
+.single-portfolio:hover .portfolio-hover {
+    opacity:  1;
+    transform: scale(1);
+}
+
+/*===========================
+team Area CSS
+=============================*/
+
+.single-team-member {
+    background-color:  #F8F8F8;
+    height: 550px;
+    background-size:  cover;
+    background-position: center top;
+    position: relative;
+    text-align: center;
+    box-shadow: 0px 0px 15px #BBBEBF;
+    margin: 20px;
+}
+
+.team-member-hover {
+    position:  absolute;
+    left:  0;
+    top: 0;
+    width:  100%;
+    height:  100%;
+    z-index: 1;
+    display:  table;
+    opacity:  0;
+    transition:  0.3s;
+    transform: scale(0);
+}
+
+.team-member-hover:before {
+    position:  absolute;
+    left:  0;
+    top: 0;
+    width:  100%;
+    height:  100%;
+    background-color: #BC8F84;
+    content:  "";
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.team-member-hover-cell {
+    display:  table-cell;
+    vertical-align: middle;
+}
+
+.team-member-hover h4 {
+    color:  #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.team-member-hover a {
+    display:  inline-block;
+    color: #fff;
+    width:  40px;
+    height:  40px;
+    font-size:  16px;
+    border:  2px solid #fff;
+    line-height:  38px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.team-member-hover a:hover {
+    background-color:  #fff;
+    color: #A26252;
+}
+
+.team-member-hover h4 span {
+    display:  block;
+    font-size: 80%;
+}
+
+.single-team-member:hover
+ .team-member-hover {
+    opacity:  1;
+    transform: scale(1);
+}
+
+.team-member-list {
+    margin-top: 40px;
+}
+
+
+/*===========================
+pricing Area CSS
+=============================*/
+
+.single-pricing-box {
+    background-color:  #929FAE;
+    color: #fff;
+    padding: 50px 40px;
+    text-align: center;
+}
+
+.pricing-box-head {
+    text-transform: uppercase;
+    font-family:  'Montserrat', sans-serif;
+    font-size: 12px;
+}
+
+.pricing-box-head p {
+    margin-bottom: 0;
+}
+
+.pricing-box-head .price {
+    color:  #fff;
+    font-weight: normal;
+    font-size: 80px;
+    font-family:  'aileronthin',  sans-serif;
+    position: relative;
+    display:  inline-block;
+    margin-bottom: 0;
+}
+
+.pricing-box-head .price:before {
+    content: "$";
+    font-size: 35%;
+    position: absolute;
+    left: -20px;
+    top: 20px;
+}
+
+.pricing-box-head .prcing-title {
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.pricing-box-head {
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+.pricing-box-head:after {
+    position:  absolute;
+    left: 50%;
+    width: 70px;
+    height:  2px;
+    background-color: #fff;
+    content:  "";
+    bottom:  0;
+    margin-left: -35px;
+}
+
+.order-btn {
+    display:  inline-block;
+    border: 1px solid #fff;
+    color:  #fff;
+    padding:  12px 35px;
+    border-radius:  50px;
+    transition: 0.3s;
+    font-family:  'Montserrat', sans-serif;
+    font-weight:  700;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.single-pricing-box .order-btn {
+    margin-top: 20px;
+}
+
+.single-pricing-box {
+    margin-top: 40px;
+}
+
+.order-btn:hover {
+    background-color:  #FFFFFF;
+    color: #A46454;
+}
+
+#pricing .col-md-4:nth-child(2) .single-pricing-box {
+    background-color: #A46454;
+}
+
+#pricing .col-md-4:nth-child(3) .single-pricing-box {
+    background-color:  #CDAC9E;
+}
+
+/*===========================
+Experience Area CSS
+=============================*/
+#experience {
+    background-size:  cover;
+    background-position: center center;
+}
+
+
+/*===========================
+Testimonial Area CSS
+=============================*/
+#testimonial {
+    background-size:  cover;
+    background-position: center center;
+    background-color:#fff;
+}
+
+.owl-carousel .owl-item .single-testimonial img {
+    width: auto;
+}
+
+.testimonial-list {
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 15px #BBBEBF;
+    padding: 50px;
+    margin: 50px 0px;
+    text-align: center;
+}
+
+.author-image img {
+    max-width: 130px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.author-image {margin-bottom: 20px;}
+
+.author-title {
+    text-transform:  uppercase;
+    font-size:  16px;
+    letter-spacing: 2px;
+}
+
+.author-title span {
+    color: #C59C92;
+    display: block;
+    font-size: 80%;
+}
+
+.single-testimonial img {
+    margin: 0 auto;
+}
+.single-testimonial {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.single-testimonial blockquote {
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-style:  italic;
+    font-size: 14px;
+}
+
+.single-brand {
+    background-color:  #fff;
+    height: 150px;
+    text-align: center;
+    display:  table;
+    width: 100%;
+    box-shadow: 0px 0px 15px #BBBEBF;
+    margin-top: 20px;
+}
+
+.brand-cell {
+    display:  table-cell;
+    vertical-align: middle;
+}
+
+.single-brand img {
+    max-width: 130px;
+}
+
+/*===========================
+    blog Area CSS
+=============================*/
+
+.single-blog-post {
+    background-color: #F8F8F9;
+    box-shadow: 0px 5px 15px #BBBEBF;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.blog-image {
+    height: 340px;
+    background-size:  cover;
+    background-position: center center;
+}
+
+.single-blog-post .blog-title {
+    text-transform:  uppercase;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.blog-content {
+    padding: 40px 25px;
+}
+
+.blog-content .order-btn {
+    border-color:  #A46454;
+    color: #A46454;
+    margin-top: 20px;
+}
+
+.blog-content .order-btn:hover {
+    background-color: #A46454;
+    color: #fff;
+}
+
+.blog-content .date {
+    color:  #797979;
+    margin-bottom: 20px;
+}
+
+/*===========================
+Contact Area CSS
+=============================*/
+
+#contact {
+    background-size:  cover;
+    background-position:  center center;
+    background-color: #333;
+    color: #fff;
+    font-size: 15px;
+}
+
+.contact-info {
+    position: relative;
+    padding-left:  50px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.contact-info i.fa {
+    width: 35px;
+    height: 35px;
+    text-align:  center;
+    border: 1px solid #9E6151;
+    line-height: 35px;
+    border-radius:  50%;
+    position:  absolute;
+    left:  0;
+    top: 50%;
+    margin-top: -17.5px;
+}
+
+.contact-form input,.contact-form textarea {
+    width:  100%;
+    border:  none;
+    margin-bottom: 10px;
+    padding:  10px 20px;
+    text-transform:  uppercase;
+    font-family:  'Montserrat', sans-serif;
+    font-size: 12px;
+    color: #9ca3b1;
+    font-weight: 600;
+}
+
+.contact-form textarea {
+    height: 170px;
+}
+
+.contact-form input[type="submit"] {
+    background-color:  #9E6151;
+    color: #fff;
+    border-radius: 50px;
+}
+
+/*===========================
+Footer  Area CSS
+=============================*/
+.footer {
+    background-color: #000;
+    padding: 20px 0px;
+}
+
+.footer .logo {
+    display:  inline-block;
+    float: left;
+}
+.footer-text {
+    float: left;
+    margin-left:  10px;
+    margin-top: 15px;
+    color:  #bcbcbc;
+    text-transform:  uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+
+.footer-text i.fa {
+    color: #A46454;
+}
+
+.bottom-social-link a {
+    color:  #fff;
+    font-size:  20px;
+    display:  inline-block;
+    border: 2px solid #A46454;
+    width: 38px;
+    height: 38px;
+    line-height: 36px;
+    border-radius:  50px;
+    transition:  0.3s;
+}
+
+.bottom-social-link {
+    margin-top: 5px;
+}
+
+.bottom-social-link a:hover {
+    background-color: #A46454;
+}
+
+.back-to-top {
+    display: inline-block;
+}
+.back-to-top,.back-to-top:hover {
+    color: #bcbcbc;
+}
